@@ -1,4 +1,5 @@
 import 'package:driver_app/componets/mytextfield.dart';
+import 'package:driver_app/componets/square_shape.dart';
 import 'package:flutter/material.dart';
 
 import '../componets/mybuttons.dart';
@@ -110,11 +111,24 @@ class LoginPage extends StatelessWidget {
            ),
          ),
 
-        //google sin in
-              Row(
+              const SizedBox(height: 50),
+
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('lib/images/google.png',
-                  height: 72,),
+                  //google sin in
+                  square_shape(imageImage: 'lib/images/google.png'),
+
+                  SizedBox(width: 10),
+
+                  //apple sin in
+                  square_shape(imageImage: 'lib/images/apple.png'),
+
+
+
+                  //facebook sin in
+                  //  square_shape(imageImage: 'lib/images/facebook.png',
+                  // )
                 ],
               )
 
