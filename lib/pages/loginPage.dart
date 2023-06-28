@@ -20,10 +20,13 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.grey[300],
       body: Center(
         child: SafeArea(
-            child: Column(children: [
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
           const SizedBox(height: 50),
 
           //logo
@@ -119,20 +122,40 @@ class LoginPage extends StatelessWidget {
                   //google sin in
                   square_shape(imageImage: 'lib/images/google.png'),
 
-                  SizedBox(width: 10),
+                  SizedBox(width: 25),
 
                   //apple sin in
                   square_shape(imageImage: 'lib/images/apple.png'),
 
+                  SizedBox(width: 25),
 
 
                   //facebook sin in
-                  //  square_shape(imageImage: 'lib/images/facebook.png',
-                  // )
+                   square_shape(imageImage: 'lib/images/facebook.png',
+                   )
                 ],
-              )
+              ),
 
           //not a member? sin in
+           const SizedBox(height: 40),
+               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+               Text(
+                   'Not a Member ?',
+                 style: TextStyle(color: Colors.grey[700]),
+               ),
+               const SizedBox(height: 4),
+               const Text(
+                   ' Register Now',
+                 style: TextStyle(
+                   color: Colors.blue,
+                 fontWeight: FontWeight.bold,
+                 ),
+               ),
+                ],
+              ),
+
         ])),
       ),
     );

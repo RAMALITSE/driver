@@ -1,4 +1,4 @@
-import 'package:driver_app/componets/square_shape.dart ';
+
 import 'package:flutter/material.dart';
 
 class square_shape extends StatelessWidget {
@@ -10,7 +10,7 @@ class square_shape extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(border: Border.all(color: Colors.white
       ),
       borderRadius: BorderRadius.circular(16
