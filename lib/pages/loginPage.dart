@@ -6,8 +6,15 @@ import '../componets/mybuttons.dart';
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
+  //text editing controllers
   final usernameController = TextEditingController();
   final passwordControler = TextEditingController();
+
+  //sign user in method
+  void signUserIn(){
+
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +47,7 @@ class LoginPage extends StatelessWidget {
 
           mytextfield(
             controller: usernameController,
-            hintText: 'Username',
+            hintText: 'Enter Username',
             obscureText: false,
           ),
 
@@ -49,7 +56,7 @@ class LoginPage extends StatelessWidget {
 
           mytextfield(
             controller: passwordControler,
-            hintText: 'Password',
+            hintText: 'Enter Password',
             obscureText: true,
           ),
           // forget password
@@ -67,9 +74,49 @@ class LoginPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 10),
+
           // sign in button
-            const mybuttons(),
+             mybuttons(
+              onTap:signUserIn ,
+            ),
           // sign in wit google
+          const SizedBox(height: 50),
+
+          //or continue with
+         Padding(
+           padding: const EdgeInsets.symmetric(horizontal: 25.0),
+           child: Row(
+             children: [
+               Expanded(child: Divider(
+                 thickness: 0.9,
+                 color: Colors.grey[400],
+               ),
+               ),
+                Padding(
+                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                 child: Text(
+                   'Or Continue with',
+                    style: TextStyle(color: Colors.grey[700]),
+                 ),
+
+               ),
+
+               Expanded(child: Divider(
+                 thickness: 0.9,
+                 color: Colors.grey[400],
+               ),
+               ),
+             ],
+           ),
+         ),
+
+        //google sin in
+              Row(
+                children: [
+                  Image.asset('lib/images/google.png',
+                  height: 72,),
+                ],
+              )
 
           //not a member? sin in
         ])),
