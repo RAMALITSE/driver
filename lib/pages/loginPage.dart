@@ -128,12 +128,12 @@ class LoginPage extends StatelessWidget {
                       //apple sin in
                       square_shape(imageImage: 'lib/images/apple.png'),
 
-                      SizedBox(width: 25),
-
-
-                      //facebook sin in
-                      square_shape(imageImage: 'lib/images/facebook.png',
-                      )
+                      // SizedBox(width: 25),
+                      //
+                      //
+                      // //facebook sin in
+                      // square_shape(imageImage: 'lib/images/facebook.png',
+                      // )
                     ],
                   ),
 
