@@ -34,19 +34,22 @@ class Onboarding extends StatelessWidget{
       subTitle: ' ',
       imageUrl: 'lib/images/logo.png',
     ),
+
     Introduction(
       title: 'Select Location',
-      subTitle: 'Brow...',
+      subTitle: 'Just select the location that you want to go to and leave the rest to us,',
       imageUrl: 'lib/images/mylocation.png',
     ),
+
     Introduction(
       title: 'Choose Your Ride',
       subTitle: 'Brow...',
       imageUrl: 'lib/images/choose.png',
     ),
+
     Introduction(
       title: 'Enjoy Your Ride',
-      subTitle: 'Brow...',
+      subTitle: 'Enjoy Your Ride with our comfortable cars and our experience driver .',
       imageUrl: 'lib/images/ride.png',
     ),
   ];
