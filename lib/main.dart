@@ -43,7 +43,7 @@ class Onboarding extends StatelessWidget{
 
     Introduction(
       title: 'Choose Your Ride',
-      subTitle: 'Brow...',
+      subTitle: 'Choose te car tha best suit you ',
       imageUrl: 'lib/images/choose.png',
     ),
 
@@ -64,6 +64,7 @@ class Onboarding extends StatelessWidget{
      onTapSkipButton: ()=> Navigator.push(context,
          MaterialPageRoute(
              builder: (context) =>LoginPage(),
+
          )),
         skipTextStyle: const TextStyle(
        color: Colors.blueGrey,
